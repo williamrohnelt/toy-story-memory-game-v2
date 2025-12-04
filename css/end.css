@@ -1,0 +1,38 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../images/bg_3.png');
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+}
+
+header, footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e20025;
+    color: #ffd900;
+    font-size: 1em;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 900px;
+    padding: 25px;
+    margin: 0 0 20px;
+    border: 1px solid black;
+}
+
+footer {
+    margin: 20px 0 0;
+}
+
+.end {
+    display: flex;
+    width: 100%;
+    max-width: 1000px;
+    margin: 0px auto;
+    border: 1px solid black;
+}

@@ -1,0 +1,26 @@
+.logo_intro {
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 700px;
+    padding: 60px;
+}
+
+.logo_intro img {
+    width: 200px;
+}
+
+footer {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    font-size: 0.8em;
+    width: 100%;
+    padding: 25px;
+}
+
+body {
+    background-color: #86c4ed;
+}

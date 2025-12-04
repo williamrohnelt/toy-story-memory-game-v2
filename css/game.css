@@ -1,0 +1,124 @@
+body {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+    background-image: url('../images/bg_3.png');
+    background-size: cover;
+    min-height: 100vh;
+    align-items: center;
+    justify-content: center;
+    padding: 20px 20px 50px;
+}
+
+header, footer {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: #e20025;
+    color: #ffd900;
+    font-size: 1em;
+    line-height: 1.5;
+    width: 100%;
+    max-width: 900px;
+    padding: 25px;
+    margin: 0 0 20px;
+    border: 1px solid black;
+}
+
+footer {
+    margin: 20px 0 0;
+}
+
+.grid {
+    display: grid;
+    grid-template-columns: repeat(8, 1fr);
+    gap: 5px;
+    width: 100%;
+    max-width: 900px;
+    margin: 0px auto;
+}
+
+.card {
+    aspect-ratio: 1/1;
+    width: 100%;
+    position: relative;
+    transition: all 400ms ease;
+    transform-style: preserve-3d;
+}
+
+.face {
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    background-size: cover;
+    background-position: center;
+    border: 1px solid black;
+}
+
+.front {
+    transform: rotateY(180deg);
+}
+
+.back {
+    background-size: 800% 500%;
+    background-image: url(../images/back_4.png);
+    backface-visibility: hidden;
+}
+
+/* Linha 1 (Y: 0%) */
+.piece-1  { background-position: 0% 0%; }
+.piece-2  { background-position: 14.2857% 0%; }
+.piece-3  { background-position: 28.5714% 0%; }
+.piece-4  { background-position: 42.8571% 0%; }
+.piece-5  { background-position: 57.1428% 0%; }
+.piece-6  { background-position: 71.4285% 0%; }
+.piece-7  { background-position: 85.7142% 0%; }
+.piece-8  { background-position: 100% 0%; }
+
+/* Linha 2 (Y: 25%) */
+.piece-9  { background-position: 0% 25%; }
+.piece-10 { background-position: 14.2857% 25%; }
+.piece-11 { background-position: 28.5714% 25%; }
+.piece-12 { background-position: 42.8571% 25%; }
+.piece-13 { background-position: 57.1428% 25%; }
+.piece-14 { background-position: 71.4285% 25%; }
+.piece-15 { background-position: 85.7142% 25%; }
+.piece-16 { background-position: 100% 25%; }
+
+/* Linha 3 (Y: 50%) */
+.piece-17 { background-position: 0% 50%; }
+.piece-18 { background-position: 14.2857% 50%; }
+.piece-19 { background-position: 28.5714% 50%; }
+.piece-20 { background-position: 42.8571% 50%; }
+.piece-21 { background-position: 57.1428% 50%; }
+.piece-22 { background-position: 71.4285% 50%; }
+.piece-23 { background-position: 85.7142% 50%; }
+.piece-24 { background-position: 100% 50%; }
+
+/* Linha 4 (Y: 75%) */
+.piece-25 { background-position: 0% 75%; }
+.piece-26 { background-position: 14.2857% 75%; }
+.piece-27 { background-position: 28.5714% 75%; }
+.piece-28 { background-position: 42.8571% 75%; }
+.piece-29 { background-position: 57.1428% 75%; }
+.piece-30 { background-position: 71.4285% 75%; }
+.piece-31 { background-position: 85.7142% 75%; }
+.piece-32 { background-position: 100% 75%; }
+
+/* Linha 5 (Y: 100%) */
+.piece-33 { background-position: 0% 100%; }
+.piece-34 { background-position: 14.2857% 100%; }
+.piece-35 { background-position: 28.5714% 100%; }
+.piece-36 { background-position: 42.8571% 100%; }
+.piece-37 { background-position: 57.1428% 100%; }
+.piece-38 { background-position: 71.4285% 100%; }
+.piece-39 { background-position: 85.7142% 100%; }
+.piece-40 { background-position: 100% 100%; }
+
+.reveal-card {
+    transform: rotateY(180deg);
+}
+
+.disabled-card {
+    opacity: 0;
+}
