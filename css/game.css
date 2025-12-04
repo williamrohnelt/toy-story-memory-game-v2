@@ -2,7 +2,7 @@ body {
     display: flex;
     flex-direction: column;
     width: 100%;
-    background-image: url('../images/bg_3.png');
+    background-image: url('../images/bg.png');
     background-size: cover;
     min-height: 100vh;
     align-items: center;
@@ -61,7 +61,7 @@ footer {
 
 .back {
     background-size: 800% 500%;
-    background-image: url(../images/back_4.png);
+    background-image: url(../images/back.png);
     backface-visibility: hidden;
 }
 
