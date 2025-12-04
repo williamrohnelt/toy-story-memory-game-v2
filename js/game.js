@@ -43,11 +43,15 @@ let secondCard = '';
 const checkEndGame = () => {
     const disabledCards = document.querySelectorAll('.disabled-card');
 
-    if (disabledCards.length === 40) {
+    if (disabledCards.length === 2) {
         clearInterval(this.loop);
+
+        localStorage.setItem('gameTime', timer.innerHTML);
+
         setTimeout(() => {
-            alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi de ${timer.innerHTML} segundos!`);
-        }, 1000);
+            // alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi de ${timer.innerHTML} segundos!`);
+            window.location.href = 'end.html';
+        }, 2000);
     }
 };
 
