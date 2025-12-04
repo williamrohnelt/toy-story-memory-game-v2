@@ -43,7 +43,7 @@ let secondCard = '';
 const checkEndGame = () => {
     const disabledCards = document.querySelectorAll('.disabled-card');
 
-    if (disabledCards.length === 2) {
+    if (disabledCards.length === 40) {
         clearInterval(this.loop);
 
         localStorage.setItem('gameTime', timer.innerHTML);
