@@ -1,4 +1,4 @@
-const IntroSound = new Audio('../sounds/intro.mp3');
+const MissionSound = new Audio('../sounds/mission.mp3');
 
 const finalPlayerName = localStorage.getItem('player');
 const finalTime = localStorage.getItem('gameTime');
@@ -12,5 +12,5 @@ const message = `Parabéns, ${finalPlayerName}! Seu tempo foi de ${finalTime} se
 spanResult.innerHTML = message;
 
 setTimeout(() => {
-    IntroSound.play();
-}, 100);
+    MissionSound.play();
+}, 300);

@@ -3,8 +3,35 @@ const spanPlayer = document.querySelector('.player');
 const timer = document.querySelector('.timer');
 
 const CardSound = new Audio('../sounds/card_sound.mp3');
-const CoolSound = new Audio('../sounds/cool.mp3');
 const IntroSound = new Audio('../sounds/intro.mp3');
+
+const AlienSound = new Audio('../sounds/alien.mp3');
+const BoBeepSound = new Audio('../sounds/bo_peep.mp3');
+const BuzzSound = new Audio('../sounds/buzz.mp3');
+const CoolSound = new Audio('../sounds/cool.mp3');
+const HammSound = new Audio('../sounds/hamm.mp3');
+const LennySound = new Audio('../sounds/lenny.mp3');
+const PizzaSound = new Audio('../sounds/pizza.mp3');
+const RexSound = new Audio('../sounds/rex.mp3');
+const WoodySound = new Audio('../sounds/woody.mp3');
+
+const matchSounds = [
+    AlienSound,
+    BoBeepSound,
+    BuzzSound,
+    CoolSound,
+    HammSound,
+    LennySound,
+    PizzaSound,
+    RexSound,
+    WoodySound
+];
+
+const randomMatchSound = () => {
+    const randomIndex = Math.floor(Math.random() * matchSounds.length);
+    const randomSound = matchSounds[randomIndex];
+    randomSound.play();
+};
 
 const characters = [
     'alien',
@@ -26,7 +53,7 @@ const characters = [
     'sid',
     'troll',
     'tikes',
-    'woody',
+    'woody'
 ];
 
 const createElement = (tag, className) => {
@@ -51,7 +78,7 @@ const checkEndGame = () => {
         setTimeout(() => {
             // alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi de ${timer.innerHTML} segundos!`);
             window.location.href = 'end.html';
-        }, 2000);
+        }, 3000);
     }
 };
 
@@ -66,7 +93,7 @@ const checkCards = () => {
         firstCard = '';
         secondCard = '';
         checkEndGame();
-        CoolSound.play();
+        randomMatchSound();
         }, 1200);
 
     } else {
