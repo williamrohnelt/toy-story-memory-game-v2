@@ -76,7 +76,7 @@ const checkEndGame = () => {
         localStorage.setItem('gameTime', timer.innerHTML);
 
         setTimeout(() => {
-            // alert(`Parabéns, ${spanPlayer.innerHTML}! Seu tempo foi de ${timer.innerHTML} segundos!`);
+            // alert(`Congratulations, ${spanPlayer.innerHTML}! Your time was ${timer.innerHTML} seconds!`);
             window.location.href = 'end.html';
         }, 3000);
     }
