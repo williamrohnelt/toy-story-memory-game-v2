@@ -7,7 +7,7 @@ const finalTime = localStorage.getItem('gameTime');
 // const timer = document.querySelector('.timer');
 
 const spanResult = document.querySelector('.gameResult');
-const message = `Parabéns, ${finalPlayerName}! Seu tempo foi de ${finalTime} segundos!`;
+const message = `Congratulations, ${finalPlayerName}! Your time was ${finalTime} seconds!`;
 
 spanResult.innerHTML = message;
 
